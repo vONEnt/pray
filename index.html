@@ -6,68 +6,46 @@
 
   <style>
     body {
+      margin: 0;
       font-family: Arial;
-      padding: 20px;
+      background: linear-gradient(to right, #2c2c2c, #4a4a4a);
     }
 
-    h2 {
-      color: blue;
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background: #f0f0f0;
+      padding: 30px;
+      border-radius: 15px;
+    }
+
+    .card {
+      background: #e0e0e0;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 10px;
       cursor: pointer;
+      text-decoration: none;
+      display: block;
+      color: #333;
+      font-weight: bold;
     }
 
-    p {
-      display: none;
-      margin-bottom: 20px;
+    .card:hover {
+      background: #d5d5d5;
     }
   </style>
-
-  <script>
-    function toggle(id) {
-      let e = document.getElementById(id);
-      if (e.style.display === "none" || e.style.display === "") {
-        e.style.display = "block";
-      } else {
-        e.style.display = "none";
-      }
-    }
-  </script>
 </head>
 
 <body>
 
-<h1>Ежедневные молитвы</h1>
+<div class="container">
+  <h1>📄 Мой сайт</h1>
 
-<h2 onclick="toggle('t1')">Ангел Господень</h2>
-<p id="t1">
+  <a class="card" href="page1.html">Заголовок 1</a>
+  <a class="card" href="page2.html">Заголовок 2</a>
 
-  Ангел Господень возвестил Марии
-и она зачала от Духа Святого.
-
-Радуйся, Мария…
-
-«Вот, я раба Господня;
-да будет Мне по слову Твоему.»
-
-Радуйся, Мария…
-
-И Слово стало плотью,
-и обитало с нами.
-
-Радуйся, Мария…
-
-Моли о нас, Пресвятая Богородица!
-Да удостоимся исполнения Христовых обещаний.
-
-Помолимся!
-Просим Тебя, Господи:
-наполни наши души Твоей благодатью,
-дабы мы, познав через Ангельское приветствие воплощение Христа, Сына Твоего,
-Его страданием и крестом достигли славы воскресения.
-Через Христа, Господа нашего. Аминь
-</p>
-
-<h2 onclick="toggle('t2')">Заголовок 2</h2>
-<p id="t2">Это текст второй статьи</p>
+</div>
 
 </body>
 </html>
