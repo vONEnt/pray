@@ -2,76 +2,94 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Статья 1</title>
+  <title>Ангел Господень</title>
 
   <style>
     html {
-    font-size: 30px;
+      font-size: 30px;
     }
 
     body {
-    margin: 0;
-    font-family: Arial;
-    background: linear-gradient(to right, #2c2c2c, #4a4a4a);
-  }
-
-  h1 {
-    font-size: 2rem; /* ← заголовок */
-  }
-    p {
-  font-size: 1.5rem; /* ← увеличиваем текст параграфа */
+      margin: 0;
+      font-family: Arial;
+      background: linear-gradient(to right, #2c2c2c, #4a4a4a);
+      min-height: 100vh;
     }
 
-  .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 50px auto;
-    background: #f0f0f0;
-    padding: 30px;
-    border-radius: 15px;
-  }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
 
-  .card {
-    background: #e0e0e0;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 10px;
-    cursor: pointer;
-    text-decoration: none;
-    display: block;
-    color: #333;
-    font-weight: bold;
-    font-size: 1.25rem; /* ← текст карточек */
-  }
-
-  .card:hover {
-    background: #d5d5d5;
-  }
-  
+    p {
+      font-size: 1.5rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
 
     .container {
       width: 90%;
-  max-width: 1200px;
-  margin: 100px auto;
+      max-width: 1200px;
+      margin: 100px auto;
       background: #f0f0f0;
       padding: 30px;
       border-radius: 15px;
     }
 
-    .card {
+    /* Красивая кнопка «Назад» */
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
       background: #e0e0e0;
-      padding: 15px;
-      margin-bottom: 15px;
-      border-radius: 10px;
-      cursor: pointer;
-      text-decoration: none;
-      display: block;
       color: #333;
+      text-decoration: none;
       font-weight: bold;
+      font-size: 1.2rem;
+      padding: 12px 24px;
+      border-radius: 10px;
+      transition: all 0.25s ease;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
     }
 
-    .card:hover {
+    .back-btn:hover {
       background: #d5d5d5;
+      transform: translateX(-4px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    }
+
+    .back-btn .arrow {
+      font-size: 1.3rem;
+      transition: transform 0.25s ease;
+    }
+
+    .back-btn:hover .arrow {
+      transform: translateX(-4px);
+    }
+
+    .top-nav {
+      margin-bottom: 25px;
+    }
+
+    .bottom-nav {
+      margin-top: 35px;
+      padding-top: 20px;
+      border-top: 2px solid #ccc;
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .mw-poem-indented {
+      display: block;
+      margin-left: 40px;
+      font-style: italic;
+      color: #555;
+    }
+
+    hr {
+      border: none;
+      border-top: 2px solid #ccc;
+      margin: 25px 0;
     }
   </style>
 </head>
@@ -79,10 +97,60 @@
 <body>
 
 <div class="container">
-  <a class="back" href="index.html">← Назад</a>
 
-  <h1>Ангел Господень 👼 </h1>
-  <p><p>Ангел Господень возвестил Марии<br />и она зачала от Духа Святого.<br /><br /><span class="mw-poem-indented"><em>Радуйся, Мария&hellip;</em></span><br /><br />&laquo;Вот, я раба Господня;<br />да будет Мне по слову Твоему.&raquo;<br /><br /><span class="mw-poem-indented"><em>Радуйся, Мария&hellip;</em></span><br /><br />И Слово стало плотью,<br />и обитало с нами.<br /><br /><span class="mw-poem-indented"><em>Радуйся, Мария&hellip;</em></span><br /><br />Моли о нас, Пресвятая Богородица!<br />Да удостоимся исполнения Христовых обещаний.<br /><br />Помолимся!<br />Просим Тебя, Господи:<br />наполни наши души Твоей благодатью,<br />дабы мы, познав через Ангельское приветствие воплощение Христа, Сына Твоего,<br />Его страданием и крестом достигли славы воскресения.<br />Через Христа, Господа нашего. Аминь.</p></p>
+  <!-- Верхняя кнопка «Назад» -->
+  <div class="top-nav">
+    <a class="back-btn" href="index.html">
+      <span class="arrow">←</span> Назад
+    </a>
+  </div>
+
+  <h1>Ангел Господень 👼</h1>
+
+  <p>
+    Ангел Господень возвестил Марии<br>
+    и она зачала от Духа Святого.
+  </p>
+
+  <span class="mw-poem-indented"><em>Радуйся, Мария…</em></span>
+
+  <p>
+    «Вот, я раба Господня;<br>
+    да будет Мне по слову Твоему.»
+  </p>
+
+  <span class="mw-poem-indented"><em>Радуйся, Мария…</em></span>
+
+  <p>
+    И Слово стало плотью,<br>
+    и обитало с нами.
+  </p>
+
+  <span class="mw-poem-indented"><em>Радуйся, Мария…</em></span>
+
+  <p>
+    Моли о нас, Пресвятая Богородица!<br>
+    Да удостоимся исполнения Христовых обещаний.
+  </p>
+
+  <hr>
+
+  <p>
+    <strong>Помолимся!</strong><br>
+    Просим Тебя, Господи:<br>
+    наполни наши души Твоей благодатью,<br>
+    дабы мы, познав через Ангельское приветствие воплощение Христа, Сына Твоего,<br>
+    Его страданием и крестом достигли славы воскресения.<br>
+    Через Христа, Господа нашего. Аминь.
+  </p>
+
+  <!-- Нижняя кнопка «Назад» -->
+  <div class="bottom-nav">
+    <a class="back-btn" href="index.html">
+      <span class="arrow">←</span> Назад
+    </a>
+  </div>
+
 </div>
 
 </body>
